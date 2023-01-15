@@ -1,0 +1,36 @@
+insert_new_column_before:
+  type: string
+  default: "Insert a new column before"
+insert_new_column_after:
+  type: string
+  default: "Insert a new column after"
+delete_selected_columns:
+  type: string
+  default: "Delete selected columns"
+rename_this_column:
+  type: string
+  default: "Rename this column"
+order_ascending:
+  type: string
+  default: "Order ascending"
+order_descending:
+  type: string
+  default: "Order descending"
+insert_new_row_before:
+  type: string
+  default: "Insert a new row before"
+insert_new_row_after:
+  type: string
+  default: "Insert a new row after"
+delete_selected_rows:
+  type: string
+  default: "Delete selected rows"
+copy:
+  type: string
+  default: "Copy..."
+paste:
+  type: string
+  default: "Paste..."
+save_as:
+  type: string
+  default: "Save as..."

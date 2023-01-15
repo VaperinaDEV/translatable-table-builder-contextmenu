@@ -1,0 +1,50 @@
+.jexcel_container {
+  .jcontextmenu {
+    // Column contextmenu
+    div:first-child:nth-last-child(n + 9) ~ {
+      div {
+        a {
+          visibility: hidden;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            visibility: visible;
+            left: 0;
+          }
+        }
+        &:nth-child(2) a:after { content: #{$insert_new_column_before}; }
+        &:nth-child(3) a:after { content: #{$insert_new_column_after}; }
+        &:nth-child(4) a:after { content: #{$delete_selected_columns}; }
+        &:nth-child(5) a:after { content: #{$rename_this_column}; }
+        &:nth-child(7) a:after { content: #{$order_ascending}; }
+        &:nth-child(8) a:after { content: #{$order_descending}; }
+        &:nth-child(10) a:after { content: #{$copy}; }
+        &:nth-child(11) a:after { content: #{$paste}; }
+        &:nth-child(12) a:after { content: #{$save_as}; }
+      }
+    }
+
+    // Row contextmenu
+    div:first-child:nth-last-child(-n + 9) ~ {
+      div {
+        a {
+          visibility: hidden;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            visibility: visible;
+            left: 0;
+          }
+        }
+        &:nth-child(2) a:after { content: #{$insert_new_row_before}; }
+        &:nth-child(3) a:after { content: #{$insert_new_row_after}; }
+        &:nth-child(4) a:after { content: #{$delete_selected_rows}; }
+        &:nth-child(6) a:after { content: #{$copy}; }
+        &:nth-child(7) a:after { content: #{$paste}; }
+        &:nth-child(8) a:after { content: #{$save_as}; }
+      }
+    }
+  }
+}
